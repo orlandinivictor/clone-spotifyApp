@@ -1,0 +1,96 @@
+.headerDiv {
+  position: fixed;
+  width: calc(100vw - 17.5rem);
+  height: 4.5rem;
+  // background: var(--gray-800);
+  padding: 0 .5rem 0 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+  .buttons {
+    display: flex;
+
+    button {
+      margin: 0 0rem 0 1rem;
+      border: none;
+      width: 2.4rem;
+      height: 2.4rem;
+      background: var(--black);
+      border-radius: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gray-50);
+
+      &.grayBackground {
+        background: var(--gray-950);
+      }
+    }
+
+    .backButton {
+      transform: translate(-5%, 0);
+    }
+    .forwardButton {
+      transform: translate(5%, 0);
+    }
+  }
+
+  .profile {
+    width: 40rem;
+    margin-top: -.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    button {
+      color: var(--white);
+      border: none;
+      background: var(--black);
+      width: 12rem;
+      height: 2.4rem;
+      border-radius: 2rem;
+    }
+
+    .upgrade {
+      border: 1px solid var(--gray-300);
+      margin-right: 2rem;
+      color: var(--gray-100);
+      font-size: .9rem;
+      letter-spacing: 1.5px;
+      font-weight: 600;
+      width: 13rem;
+      height: 2.54rem;
+
+      &:hover {
+        width: 13.5rem;
+        height: 2.7rem;
+      }
+    }
+
+    .profileMenu {
+      display: flex;
+      align-items: center;
+      span:first-of-type {
+        background: var(--gray-800);
+        margin: .2rem .2rem;
+        border-radius: 1rem;
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      span:last-of-type {
+        font-weight: 600;
+        margin: 0 .2rem;
+      }
+
+      &:hover {
+        background: var(--gray-900);
+      }
+    }
+  }
+}

@@ -1,0 +1,138 @@
+.playerDiv {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 6.5rem;
+
+  background: var(--gray-900);
+  border-top: 1px solid var(--gray-800);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 6.5rem;
+  padding: 0 1.1rem;
+
+  .app {
+    position: relative;
+    top: -30%;
+    left: 2rem;
+  }
+
+  .player {
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .playerButtons {
+      button {
+        background: transparent;
+        border: none;
+        margin: .5rem 1rem;
+        color: var(--gray-300);
+
+      }
+
+      button.mainButton {
+        width: 2.5rem;
+        height: 2.5rem;
+        background: var(--gray-50);
+        border-radius: 50%;
+        color: var(--gray-800);
+        align-items: center;
+
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+
+    .playerContent {
+      display: flex;
+      align-items: center;
+
+      span {
+        font-size: .9rem;
+        color: var(--gray-300);
+      }
+
+      .slider {
+        margin: .7rem 1rem;
+        width: 32rem;
+        border-radius: 1rem;
+        height: .35rem;
+        background: var(--gray-500);
+      }
+  }
+  }
+
+  .currentSong {
+    display: flex;
+    align-items: center;
+    padding: 1.2rem 0;
+    height: 100%;
+    width: 25rem;
+
+    img {
+      height: 100%;
+    }
+
+    .songDetails {
+      padding: 1rem;
+
+      h3 {
+        font-size: .96rem;
+        color: var(--gray-50);
+        font-weight: 500;
+        margin-bottom: -.3rem;
+      }
+
+      span {
+        font-weight: 400;
+        font-size: .8rem;
+        color: var(--gray-300);
+      }
+    }
+
+    .songIcons {
+      margin-left: 1rem;
+      span {
+        margin-right: 1rem;
+        color: var(--gray-300);
+      }
+    }
+  }
+
+  .utils {
+    width: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .slider {
+      margin: .7rem 0rem .7rem 0.5rem;
+      width: 7rem;
+      border-radius: 1rem;
+      height: .35rem;
+      background: var(--gray-500);
+      transform: translate(0, -40%);
+    }
+
+    span {
+      margin: 0 .3rem;
+      color: var(--gray-300);
+    }
+
+    .rotated {
+      transform: rotate(20deg);
+    }
+  }
+}
+
+
